@@ -18,10 +18,11 @@
     [Inject]
     public NavigationManager NavService { get; set; }
 
-    public void HandleValidSubmit()
+    protected void HandleValidSubmit()
     {
         BugService.AddBug(AddBug);
 
         NavService.NavigateTo("");
     }
+
 }
